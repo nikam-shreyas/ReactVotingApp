@@ -115,12 +115,6 @@ exports.deletePoll = async (req, res, next) => {
               : option,
         );
   
-        console.log('VOTE: USERID ', userId);
-        console.log('VOTE: poll.voted ', poll.voted);
-        console.log(
-          'VOTE: vote filter',
-          poll.voted.filter(user => user.toString() === userId).length,
-        );
   
         if (poll.voted.filter(user => user.toString() === userId).length <= 0) {
           poll.voted.push(userId);

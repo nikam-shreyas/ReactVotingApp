@@ -1,0 +1,1 @@
+cd server && nodemon index.js && cd .. && cd client && yarn start
