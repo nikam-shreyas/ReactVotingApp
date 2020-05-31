@@ -40,8 +40,8 @@ class Auth extends Component {
             type="text"
             value={username}
             name="username"
-            onChange={this.handleChange}
             autoComplete="off"
+            onChange={this.handleChange}
             className="form-input"
           />
           <label className="form-label" htmlFor="password">
