@@ -12,4 +12,4 @@ const RouteViews = ({auth}) =>(
     </main>
 
 );
-export default connect(store=>({auth: store.auth}))(RouteViews);
+export default withRouter(connect(store=>({auth: store.auth}))(RouteViews));
