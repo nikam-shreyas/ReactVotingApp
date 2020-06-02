@@ -1,6 +1,6 @@
 import React from 'react';
-import Polls from '../components/Polls';
+import Poll from '../components/Poll';
 
-const TestPage = () =><Polls />;
+const TestPage = () =><Poll />;
 
 export default TestPage;
